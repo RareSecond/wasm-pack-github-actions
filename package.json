@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "pnpm -r build",
+    "build-sequentially": "cd packages/first && pnpm build && cd ../second && pnpm build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
